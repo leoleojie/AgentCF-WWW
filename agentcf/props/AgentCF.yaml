@@ -17,7 +17,7 @@ chat_api_batch: 10
 match_rule: fuzzy
 saved: True
 loaded: ~
-evaluation: basic  # Three modes in evaluation: basic, retrieval, sequential
+evaluation: basic  # Three modes in evaluation: basic, rag, sequential
 all_update_rounds: 2
 update_neg_item: ~
 test_only: ~
@@ -50,4 +50,4 @@ system_prompt_template_evaluation_sequential: "I am a CD enthusiast. Here is my 
 system_prompt_template_evaluation_retrieval: "I am a CD enthusiast. Here is my previous self-introduction, exhibiting my past preferences and dislikes: '$user_past_description'.\n\n Recently, after listening to some CDs, I found my new preferences and dislikes, thereby updating my self-introduction as follows: '$user_description'. \n\n  Now, I want to find some CDs that matches my preferences from a selection of $candidate_num candidate CDs. The features of these candidate CDs are listed as follows:\n $example_list_of_item_description. \n\n Please rearrange these candidate CDs based on my preferences and dislikes.  To do this, please follow these steps:\n 1. Analyze my past preferences and dislikes from my previous self-introduction. \n 2. Analyze my current preferences and dislikes from my updated self-introduction. \n 3. Compare these candidate CDs and analyze their relationships to my preferences and dislikes. Rearrange these candidates based on your analysis. \n 4. Generate your output in the following format: 'Rank: {1. CD title \\n 2. CD title ...}.' \n Note that the rank list should be split by line breakers. \n\n Important note:\n When recommending CDs, you should primarily consider my current preferences and dislikes. However, my past preferences and dislikes are also valuable information. When you are unable to determine what CD to recommend based on my current preferences and dislikes, do not forget to refer to my past preferences and dislikes."
 
 
-api_key_list: ['sk-IEY5W1LPnlNn57Ff7e0cD30aA62e45AaA9341bB06b1aB428']
+api_key_list: ['xxx']
